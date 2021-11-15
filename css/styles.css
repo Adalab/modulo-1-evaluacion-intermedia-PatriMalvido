@@ -3,7 +3,6 @@
   margin: 0;
 }
 .header {
-
   background-color: #ffffff;
   position: fixed;
   width: 100%;
@@ -11,8 +10,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  height: 100px;
+  height: 180px;
+  box-sizing: border-box;
 }
 .logo {
   width: 155px;
@@ -30,6 +29,7 @@
 .menu li {
   list-style: none;
   margin-right: 20px;
+  margin-bottom: 13px;
 }
 .section {
   background-color: #3cdbc0;
@@ -52,5 +52,8 @@
     justify-content: space-between;
     padding: 30px;
     font-size: 40px;
+  }
+  .menu li {
+    font-size: 16px;
   }
 }
