@@ -1,0 +1,66 @@
+/*@import 'core/variables';
+@import 'core/reset';
+@import 'components/code';
+@import 'components/links';
+@import 'layout/page';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'pages/index';*/
+* {
+  padding: 0;
+  margin: 0; }
+
+.header {
+  background-color: #ffffff;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 180px;
+  box-sizing: border-box; }
+
+.logo {
+  width: 155px;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+.menu {
+  display: flex;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Rubik", sans-serif;
+  color: #4a4a4a;
+  text-align: center; }
+
+.menu li {
+  list-style: none;
+  margin-right: 20px;
+  margin-bottom: 13px; }
+
+.section {
+  background-color: #3cdbc0;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.title {
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+  color: #ffffff;
+  font-size: 30px; }
+
+@media all and (min-width: 768px) {
+  .header {
+    box-sizing: border-box;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+    font-size: 40px; }
+  .menu li {
+    font-size: 16px; } }
+
+/*# sourceMappingURL=main.css.map */
