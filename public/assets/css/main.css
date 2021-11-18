@@ -1,46 +1,50 @@
-/*@import 'core/variables';
-@import 'core/reset';
-@import 'components/code';
-@import 'components/links';
-@import 'layout/page';
-@import 'layout/header';
-@import 'layout/footer';
-@import 'pages/index';*/
 * {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  box-sizing: border-box; }
+
+:root {
+  --main-font: "Rubik", sans-serif;
+  --color-menu: #4a4a4a;
+  --color-title: #ffffff;
+  --color-background: #3cdbc0;
+  font-family: var(--main-font); }
 
 .header {
-  background-color: #ffffff;
+  background-color: var(--color-title);
   position: fixed;
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 180px;
-  box-sizing: border-box; }
+  align-items: center; }
 
 .logo {
   width: 155px;
   padding-top: 10px;
   padding-bottom: 10px; }
 
-.menu {
+.header-menu {
   display: flex;
-  box-sizing: border-box;
   font-size: 16px;
-  font-family: "Rubik", sans-serif;
-  color: #4a4a4a;
-  text-align: center; }
+  color: var(--color-menu);
+  text-align: center;
+  padding: 20px;
+  list-style: none; }
 
-.menu li {
-  list-style: none;
-  margin-right: 20px;
-  margin-bottom: 13px; }
+.menu-item {
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 13px;
+  padding-left: 13px; }
+
+.menu-link {
+  text-decoration: none;
+  color: var(--color-menu);
+  padding: 10px;
+  text-transform: uppercase; }
 
 .section {
-  background-color: #3cdbc0;
+  background-color: var(--color-background);
   display: flex;
   height: 100vh;
   flex-direction: column;
@@ -49,18 +53,18 @@
 
 .title {
   text-align: center;
-  font-family: "Rubik", sans-serif;
-  color: #ffffff;
-  font-size: 30px; }
+  text-transform: capitalize;
+  color: var(--color-title);
+  font-size: 30px;
+  word-spacing: 100vw; }
 
 @media all and (min-width: 768px) {
   .header {
-    box-sizing: border-box;
     flex-direction: row;
     justify-content: space-between;
     padding: 30px;
     font-size: 40px; }
-  .menu li {
-    font-size: 16px; } }
+  .title {
+    font-size: 40px; } }
 
 /*# sourceMappingURL=main.css.map */
